@@ -1,0 +1,18 @@
+@import '../../../../../../scss/mixins';
+
+.subclass-create-menu {
+  &__frame {
+    max-height: 300px;
+    overflow-y: auto;
+    @include scroll-style-primary;
+  }
+
+  &__group {
+
+    &:not(:last-child){
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1px dashed var(--border-color-base);
+    }
+  }
+}

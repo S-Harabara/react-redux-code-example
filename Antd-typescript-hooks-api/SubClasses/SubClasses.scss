@@ -1,0 +1,76 @@
+.settings-subclasses {
+  @mixin title {
+    font-size: 16px;
+    color: var(--heading-color);
+    font-weight: 500;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color-base);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__add {
+    margin-left: auto;
+  }
+
+  &__group {
+    margin-bottom: 15px;
+  }
+
+  &__group-list {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0 0 15px 0;
+
+    &:not(:last-child){
+      border-bottom: 1px solid var(--border-color-base);
+    }
+  }
+
+  &__group-list-item {
+    padding: 3px 0 4px;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child){
+      border-bottom: 1px dashed var(--border-color-base);
+    }
+
+    .ant-btn {
+      background: transparent!important;
+      padding: 0;
+    }
+  }
+
+  &__group-title {
+    @include title;
+    line-height: 1;
+    padding-bottom: 15px;
+
+    &--empty {
+      border-bottom: 1px solid var(--border-color-base);
+    }
+  }
+
+  &__group-list-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__actions-separator {
+    background: var(--border-color-base);
+    height: 22px;
+    width: 1px;
+    display: block;
+    margin: 0 5px;
+  }
+}

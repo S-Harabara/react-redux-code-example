@@ -1,0 +1,10 @@
+.settings-subclasses-form {
+  &__footer {
+    display: flex;
+    margin-top: 40px;
+
+    & > * {
+      margin-right: 10px;
+    }
+  }
+}
